@@ -20,9 +20,13 @@ on:
 jobs:
   echo_inputs_job:
     runs-on: ubuntu-latest
-    environment: approval
     steps:
       - name: Print Outputs
         run: |
           echo "Environment: ${{ github.event.inputs.ENVIRONMENT }}"
           echo "Reason: ${{ github.event.inputs.REASON }}"
+
+  approval:
+    runs-on: ubuntu-latest
+    environment: approval
+    needs: echo_inputs_job
