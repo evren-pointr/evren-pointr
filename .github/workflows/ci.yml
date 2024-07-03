@@ -27,6 +27,10 @@ jobs:
           echo "Reason: ${{ github.event.inputs.REASON }}"
 
   approval:
-    runs-on: ubuntu-latest
-    environment: approval
-    needs: echo_inputs_job
+     runs-on: ubuntu-latest
+     environment: approval
+     needs: echo_inputs_job
+     steps: 
+       - name: Print Approval Done
+         run: |
+            echo: "Approval Completed"
