@@ -33,4 +33,4 @@ jobs:
      steps: 
        - name: Print Approval Done
          run: |
-            echo: "Approval Completed"
+            echo "Approval Completed"
