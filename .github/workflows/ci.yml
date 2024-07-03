@@ -1,0 +1,27 @@
+name: Echo Inputs Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      ENVIRONMENT:
+        description: 'Environment'
+        required: true
+        type: choice
+        options:
+          - 'DEV'
+          - 'QA'
+          - 'PROD'
+          - 'DEMO'
+      REASON:
+        description: 'Reason'
+        required: true
+        default: 'N/A'
+
+jobs:
+  echo_inputs_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Outputs
+        run: |
+          echo "Environment: ${{ github.events.inputs.ENVIRONMENT }}"
+          echo "Reason: ${{ github.events.inputs.REASON }}"
