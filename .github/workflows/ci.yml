@@ -28,6 +28,7 @@ jobs:
 
   approval:
      runs-on: ubuntu-latest
+     if: ${{ github.event.inputs.ENVIRONMENT == 'PROD' }} #Runs only environment is PROD
      environment: approval
      needs: echo_inputs_job
      steps: 
