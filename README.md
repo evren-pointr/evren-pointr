@@ -1,12 +1,9 @@
-- 👋 Hi, I’m Evren
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+👋 Hi, I’m Evren
 
-<!---
-evren-pointr/evren-pointr is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+💻 I am working as VP of DevOps at [Pointr][pointr-website-url]
+ℹ️ This profile is for my Pointr account
+📬 You can reach me via my personal GitHub page via this [link][evren-github-url] or from my personal page via this [link][evren-personal-url]
+
+[pointr-website-url]: https://pointr.tech
+[evren-github-url]: https://github.com/evrentan
+[evren-personal-url]: https://evrentan.com
